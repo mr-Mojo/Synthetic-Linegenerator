@@ -48,7 +48,7 @@ Use `-f` to control the intensity of the augmentation in a range from `]0,10.0]`
 
 All augmented images will be written to a folder specified by `-o` (if none is given, `/augmentations` will be used) and can be zipped by using `-z`. Use the `-s` toggle if you want the augmented images to be written to their respective separate folders.
 
-
+To use several augmentation methods on the files, simply run the augment_images - script again with the former output as input. 
 
 
 
