@@ -5,7 +5,7 @@ A synthetic Linegenerator for OCR applications. Based on Belval's TextRecognitio
 Clone this repository and use `pip install -r requirements.txt` 
 
 ## How does it work?
-In `TextRecognitionDataGenerator`, run `python run.py -c 1000 -i <path>/text/`shuffled_strings_from_1557_dataset_and_web_clean.txt` to get 1000 randomly generated images with a font of your choice. You can set the font in `TextRecognitionDataGenerator/fonts`, where historic fonts should be placed in the historic-folder. If more than one font resides in the historic-folder, the generator switch between the given fonts randomly. 
+In `TextRecognitionDataGenerator`, run `python run.py -c 1000 -i <path>/text/shuffled_strings_from_1557_dataset_and_web_clean.txt` to get 1000 randomly generated images with a font of your choice. You can set the font in `TextRecognitionDataGenerator/fonts`, where historic fonts should be placed in the historic-folder. If more than one font resides in the historic-folder, the generator switch between the given fonts randomly. 
 
 In `FontForge`, you will find the `.sfd` (FontForge projectfile) and `.ttf`-files for a historic font generated from the 1557-Methodus-Clenardus dataset. Note that `1557-artifically_enhanced_all_chars` contains characters that were not present in the original dataset but have been "composed" of others, e.g. W is composed from 2x V. 
 
