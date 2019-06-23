@@ -9,7 +9,7 @@ In `TextRecognitionDataGenerator`, run `python run.py -c 1000` to get 1000 rando
 
 In `FontForge`, you will find the `.sfd` (FontForge projectfile) and `.ttf`-files for a historic font generated from the 1557-Methodus-Clenardus dataset. Note that `1557-artifically_enhanced_all_chars` contains characters that were not present in the original dataset but have been "composed" of others, e.g. W is composed from 2x V. 
 
-In `text`, you will find `.txt`-files with all the words from the dataset. For best performance, `shuffled_strings_from_1557_dataset_and_web_clean.txt` should be used as input, as it contains randomly shuffled words from the dataset and is enriched with latin text from the internet. All the words from the 1557-dataset can be found in `TextRecognitionGenerator/dicts/hist.txt`.
+In `text`, you will find `.txt`-files with all words from the dataset. For best performance, `shuffled_strings_from_1557_dataset_and_web_clean.txt` should be used as input, as it contains randomly shuffled words from the dataset and is enriched with latin text from the internet. All the words from the 1557-dataset can be found in `TextRecognitionGenerator/dicts/hist.txt`.
 
 
 
