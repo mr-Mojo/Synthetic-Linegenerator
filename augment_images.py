@@ -265,7 +265,8 @@ def main():
         return
     
     if results.output_folder == "": 
-        os.mkdir("augmentations")
+        if not os.path.exists("augmentations"):
+            os.mkdir("augmentations")
         results.output_folder = os.path.join(os.getcwd(),"augmentations")
         
     
