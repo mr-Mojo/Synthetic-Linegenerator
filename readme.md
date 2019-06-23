@@ -40,9 +40,13 @@ Some minor augmentation features:
 ## Data Augmentation 
 The script `augment_images.py` will apply image augmentation to the given input. The following augmentations will be used: 
 - random blobs 
+![alt text](https://github.com/mr-Mojo/Synthetic-Linegenerator/blob/master/imgs/blobs.png)
 - rotation and rescaling 
+![alt text](https://github.com/mr-Mojo/Synthetic-Linegenerator/blob/master/imgs/rot.png)
 - gauﬂian blurring 
+![alt text](https://github.com/mr-Mojo/Synthetic-Linegenerator/blob/master/imgs/warped.png)
 - (random noise-) distorsion 
+![alt text](https://github.com/mr-Mojo/Synthetic-Linegenerator/blob/master/imgs/dist.png)
 
 Use `-f` to control the intensity of the augmentation in a range from `]0,10.0]`. Note that higher factors make the rescaling-process slow and somewhat useless, as the image will be cropped at the border. This can be resolved by using the `-r` toggle, that allows to exclude the rotation from the augmentation. 
 
