@@ -52,7 +52,10 @@ All augmented images will be written to a folder specified by `-o` (if none is g
 
 
 
-##### Future TO-DO: 
+
+
+
+#### Future TO-DO: 
 - make character spacing variable 
 - use background and textcolor from real data instead of plain white and black  
 
