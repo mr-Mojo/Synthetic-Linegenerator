@@ -60,7 +60,6 @@ All augmented images will be written to a folder specified by `-o` (if none is g
 
 
 #### Potential future TO-DOs: 
-- multiaugmentation 
 - make character spacing variable (not trivial)
 - use background and textcolor from real data instead of plain white and black  
 - use handwritten model for more variance in generated data
