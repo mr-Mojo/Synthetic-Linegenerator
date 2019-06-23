@@ -268,7 +268,7 @@ def parse_arguments():
     parser.add_argument(
         "-sf",
         "--show_font",
-        action='store_true'
+        action='store_true',
         help="Show the current font and its available characters before generation of files",
         default=False
     )
