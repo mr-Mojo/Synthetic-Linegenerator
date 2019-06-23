@@ -7,11 +7,11 @@ Clone this repository and use `pip install -r requirements.txt`
 Tested on Windows 10 and Ubuntu 16.04, requires Python 3.x. 
 
 ## How does it work?
-In `TextRecognitionDataGenerator`, run `python run.py -c 1000 -i <path>/text/all_strings_and_web.txt` to get 1000 randomly generated images with a font of your choice. You can set the font in `TextRecognitionDataGenerator/fonts`, where historic fonts should be placed in the historic-folder. If more than one font resides in the historic-folder, the generator switch between the given fonts randomly. Currently, the generator only uses characters and ligatures that were present in the original 1557-dataset (`1557-true_character_occurence.ttf`)
+In `TextRecognitionDataGenerator`, run `python run.py -c 1000 -i <path>/text/all_strings_and_web.txt` to get 1000 randomly generated images with a font of your choice. You can set the font in `TextRecognitionDataGenerator/fonts`, where historic fonts should be placed in the historic-folder. If more than one font resides in the historic-folder, the generator will switch between the given fonts randomly. Currently, the generator only uses characters and ligatures that were present in the original 1557-dataset (`1557-true_character_occurence.ttf`)
 
 In `FontForge`, you will find the `.sfd` (FontForge projectfile) and `.ttf`-files for a historic font generated from the 1557-Methodus-Clenardus dataset. Note that `1557-artifically_enhanced_all_chars` contains characters that were not present in the original dataset but have been "composed" of others, e.g. W is composed from 2x V. Note that as of now, only TrueType-Fonts are supported.
 
-In `text`, you will find `.txt`-files with all words from the dataset. For best performance, `all_strings_and_web.txt` should be used as input, as it contains randomly shuffled words from the dataset and is enriched with latin text from the internet. All the words from the 1557-dataset can be found in `TextRecognitionGenerator/dicts/hist.txt`.
+In `text`, you will find `.txt`-files with all words from the dataset. All the words from the 1557-dataset can be found in `TextRecognitionGenerator/dicts/hist.txt`. For best performance, `all_strings_and_web.txt` should be used as input, as it contains randomly shuffled lines of length 5 that consist of words from the 1557 dataset and are enriched with latin text from the internet. 
 
 
 
