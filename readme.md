@@ -4,6 +4,8 @@ A synthetic Linegenerator for OCR applications. Based on Belval's TextRecognitio
 
 Clone this repository and use `pip install -r requirements.txt` 
 
+Tested on Windows 10 and Ubuntu 16.04, requires Python 3.x. 
+
 ## How does it work?
 In `TextRecognitionDataGenerator`, run `python run.py -c 1000 -i <path>/text/all_strings_and_web.txt` to get 1000 randomly generated images with a font of your choice. You can set the font in `TextRecognitionDataGenerator/fonts`, where historic fonts should be placed in the historic-folder. If more than one font resides in the historic-folder, the generator switch between the given fonts randomly. 
 
