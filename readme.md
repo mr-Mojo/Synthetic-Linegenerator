@@ -48,3 +48,11 @@ Use `-f` to control the intensity of the augmentation in a range from `]0,10.0]`
 
 All augmented images will be written to a folder specified by `-o` (if none is given, `/augmentations` will be used) and can be zipped by using `-z`. Use the `-s` toggle if you want the augmented images to be written to their respective separate folders.
 
+
+
+
+
+# Future TO-DO: 
+- make character spacing variable 
+- use background and textcolor from real data instead of plain white and black  
+
