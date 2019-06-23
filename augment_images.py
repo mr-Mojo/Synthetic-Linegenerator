@@ -253,6 +253,10 @@ def random_blotches(image, fgblobs, bgblobs, fgscale=10, bgscale=10):
 def main(): 
     results = parser.parse_args() 
     
+    if results.input_folder == "": 
+        print("No input specified. Use -i <path>.")
+        return
+    
     fct = results.factor 
     
     
