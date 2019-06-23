@@ -59,7 +59,8 @@ To use several augmentation methods on the files, simply run the augment_images 
 
 
 
-#### Future TO-DO: 
+#### Potential future TO-DOs: 
 - make character spacing variable 
 - use background and textcolor from real data instead of plain white and black  
+- use handwritten model for more variance in generated data
 
