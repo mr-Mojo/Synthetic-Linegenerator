@@ -268,10 +268,9 @@ def parse_arguments():
     parser.add_argument(
         "-sf",
         "--show_font",
-        type=int,
-        nargs="?",
+        action='store_true'
         help="Show the current font and its available characters before generation of files",
-        default=0
+        default=False
     )
     parser.add_argument(
         "-ro",
@@ -333,8 +332,7 @@ def load_fonts(lang):
 
 #this might not look as nice for other fonts with a different number of glyphs
 def plot_font(): 
-    path = os.path.join('fonts/historic', '1557-true_character_occurence.ttf')
-    #path = r'C:\HiWi_6\TextRecognitionDataGenerator\TextRecognitionDataGenerator\fonts\historic\1557-true_character_occurence.ttf'
+    path = os.path.join('fonts','historic', '1557-true_character_occurence.ttf')
     ttf = TTFont(path, 0, allowVID=0,ignoreDecompileErrors=True,fontNumber=-1)
     prop = mfm.FontProperties(fname=path)
     
@@ -383,8 +381,8 @@ def main():
     # Create font (path) list
     fonts = load_fonts(args.language)
 
-    if args.show_font==1: 
-        print('The following font will be used:',fonts,'\n')
+    if args.show_font==True: 
+        print('The following font will be used:',fonts[0],'\n')
         char = input('proceed? y(yes), n(no), s(show font)')
         if char=='s' or char=='show font': 
             plot_font()
