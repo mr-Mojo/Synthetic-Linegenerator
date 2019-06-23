@@ -52,9 +52,7 @@ The script `augment_images.py` will apply image augmentation to the given input.
 
 Use `-f` to control the intensity of the augmentation in a range from `]0,10.0]`. Note that higher factors make the rescaling-process slow and somewhat useless, as the image will be cropped at the border. This can be resolved by using the `-r` toggle, that allows to exclude the rotation from the augmentation. 
 
-All augmented images will be written to a folder specified by `-o` (if none is given, `/augmentations` will be used) and can be zipped by using `-z`. Use the `-s` toggle if you want the augmented images to be written to their respective separate folders.
-
-To use several augmentation methods on the files, simply run the augment_images - script again with the former output as input. 
+All augmented images will be written to a folder specified by `-o` (if none is given, `/augmentations` will be used) and can be zipped by using `-z`. Use the `-s` toggle if you want the augmented images to be written to their respective separate folders. To use more than one augmentation run per file, simply run `augment_images.py` again with the former output as input. 
 
 
 
@@ -62,7 +60,8 @@ To use several augmentation methods on the files, simply run the augment_images 
 
 
 #### Potential future TO-DOs: 
-- make character spacing variable 
+- multiaugmentation 
+- make character spacing variable (not trivial)
 - use background and textcolor from real data instead of plain white and black  
 - use handwritten model for more variance in generated data
 
